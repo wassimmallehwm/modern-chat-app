@@ -1,0 +1,36 @@
+<div class="main">
+  <div [ngClass]="themeClass">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item has-dropdown">
+              <a href="javascript:void(0);">Theme</a>
+              <ul class="dropdown">
+                  <li class="dropdown-item">
+                      <span id="light" (click)="lightTheme()">Light</span>
+                  </li>
+                  <li class="dropdown-item">
+                      <span id="dark" (click)="darkTheme()">Dark</span>
+                  </li>
+                  <li class="dropdown-item">
+                      <span id="solar" [ngStyle]="{'background': 'solarStyle'}"
+                      (click)="solarTheme()"> {{solar}} </span>
+                  </li>
+              </ul>
+          </li>
+          <li class="nav-item">Login</li>
+      </ul>
+    </nav>
+
+    <header>
+      <img src="assets/images/chat-icon.png" class="logo" alt="">
+      <h1>Front-end Web Development, <br>Fired Up</h1>
+
+      <p>Flutter, Firebase, Javascript, Node.js</p>
+    </header>
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+.container, .row {
+  height: 100%;
+}
+
+#chat-icon{
+  max-width: 70%!important;
+  margin-top: 20%;
+}
+
+#chat-icon-div{
+  margin-top: 25%;
+  margin-left: 20%;
+  align-self: center;
+}
+
+#login-div{
+  align-self: center;
+}
+
+.form-group{
+  margin: 10px 15%;
+  width: 70%;
+}
+.vl {
+  border-left: 1px solid black;
+  height: 60%;
+  margin: 10% 0;
+}
+
